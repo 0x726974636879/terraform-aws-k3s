@@ -6,7 +6,7 @@ With this configuration, you can easily create a scalable and reliable infrastru
 
 ## Prerequisites
 
-- Terraform 4.0.x or higher
+- Terraform 0.14.x or higher
 - An AWS account with the necessary permissions
 - A `.tfvars` variable file at the root of the project
 - Two environment variables added to your `.bashrc` or `.zshrc` file:
