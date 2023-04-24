@@ -12,7 +12,7 @@ With this configuration, you can easily create a scalable and reliable infrastru
 - Two environment variables added to your `.bashrc` or `.zshrc` file:
   - `TF_CLOUD_ORGANIZATION`: The name of your Terraform Cloud organization, if you're using Terraform Cloud to manage your state.
   - `TF_WORKSPACE`: The name of the workspace you're using in Terraform Cloud, if you're using Terraform Cloud to manage your state.
-- `tflint` installed on your local machine if you plan to make modifications to the infrastructure. `tflint` is an optional tool that checks the quality of your Terraform code and reports potential errors.
+- `tflint` installed on your local machine if you plan to make modifications to the infrastructure. `tflint` is an optional tool that checks the quality of your Terraform code and reports potential errors, ([documentation here](https://github.com/terraform-linters/tflint)).
 
 ## Variables
 
