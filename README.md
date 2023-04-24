@@ -45,7 +45,6 @@ rds_database = {
 load_balancer = {
   name                   = string
   internal               = bool
-  load_balancer_type     = string
   access_logs_prefix     = string
   access_logs_is_enabled = bool
   type                   = string
