@@ -1,16 +1,15 @@
 # -- root/modules.tf --
 
 module "networking" {
-  source                    = "./modules/networking"
-  vpc_cidr_block            = local.vpc_cidr_block
-  public_sub_count          = var.vpc.public_sub_count
-  private_sub_count         = var.vpc.private_sub_count
-  max_subnets               = 20
-  vpc_private_cidr_blocks   = [for i in range(1, 255, 2) : cidrsubnet(local.vpc_cidr_block, 8, i)]
-  vpc_public_cidr_blocks    = [for i in range(2, 255, 2) : cidrsubnet(local.vpc_cidr_block, 8, i)]
-  ssh_access_ip             = var.vpc.ssh_access_ip
-  is_db_subnet_group        = var.vpc.is_db_subnet_group
-  mtc_formation_internal_ip = var.mtc_formation_internal_ip
+  source                  = "./modules/networking"
+  vpc_cidr_block          = local.vpc_cidr_block
+  public_sub_count        = var.vpc.public_sub_count
+  private_sub_count       = var.vpc.private_sub_count
+  max_subnets             = 20
+  vpc_private_cidr_blocks = [for i in range(1, 255, 2) : cidrsubnet(local.vpc_cidr_block, 8, i)]
+  vpc_public_cidr_blocks  = [for i in range(2, 255, 2) : cidrsubnet(local.vpc_cidr_block, 8, i)]
+  ssh_access_ip           = var.vpc.ssh_access_ip
+  is_db_subnet_group      = var.vpc.is_db_subnet_group
 }
 
 module "database" {
