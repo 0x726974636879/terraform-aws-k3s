@@ -31,7 +31,3 @@ variable "ssh_access_ip" {
 variable "is_db_subnet_group" {
   type = bool
 }
-
-variable "mtc_formation_internal_ip" {
-  type = string
-}

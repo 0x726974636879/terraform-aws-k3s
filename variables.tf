@@ -33,10 +33,6 @@ variable "ec2" {
   }
 }
 
-variable "mtc_formation_internal_ip" {
-  type = string
-}
-
 variable "deployment_file_name" {
   type = string
 }

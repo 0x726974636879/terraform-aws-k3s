@@ -1,8 +1,3 @@
-output "db_details" {
-  value = var.rds_database
-}
-
-
 output "load_balancer_dns" {
   value = module.load_balancer.load_balancer_dns
 }
